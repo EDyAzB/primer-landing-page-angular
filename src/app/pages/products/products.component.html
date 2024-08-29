@@ -1,0 +1,24 @@
+<div class="conteiner">
+    <h1>This all products</h1>
+    <table class="table table-dark table-hover table align-middle">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Praice</th>
+            <th scope="col">Descripction</th>
+            <th scope="col" class="button-column"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (product of productList; track $index) {
+          <tr>
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.title}}</td>
+            <td>{{product.price | currency}}</td>
+            <td>{{product.description}}</td>
+            <td><button type="button" class="btn btn-primary" (click)="navegate(product.id)">Details</button></td>
+          </tr>}
+        </tbody>
+      </table>
+    </div>

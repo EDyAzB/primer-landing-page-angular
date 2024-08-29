@@ -1,0 +1,10 @@
+.general-styles{
+    background-color: black;
+    color: white ;
+}
+:host {
+    background-color: black;
+    color: white;
+    display: block;
+    height: all; /* Asegura que el fondo cubra toda la altura de la página */
+  }
